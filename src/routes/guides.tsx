@@ -32,9 +32,10 @@ export function GuidesPage() {
         jp="旅の手引き"
         intro="行き方、泊まり方、過ごし方。田舎を旅するために知っておきたい、小さな手引きをまとめました。"
         image={images.localTrain}
+        tone="amber"
       />
 
-      <section className="py-24 mx-auto max-w-[1200px] px-6">
+      <section className="py-24 mx-auto max-w-300 px-6">
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
           {guides.map((g) => (
             <article key={g.num} className="group border-t border-border pt-8">

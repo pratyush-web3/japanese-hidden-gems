@@ -17,8 +17,8 @@ export const Route = createFileRoute("/privacy")({
 function PrivacyPage() {
   return (
     <SiteLayout>
-      <PageHero eyebrow="Legal" title="Privacy Policy" jp="プライバシーポリシー" image={images.seasonWinter} />
-      <article className="py-24 mx-auto max-w-[760px] px-6 space-y-10 font-jp text-base leading-loose text-foreground/85">
+      <PageHero eyebrow="Legal" title="Privacy Policy" jp="プライバシーポリシー" image={images.seasonWinter} tone="stone" />
+      <article className="py-24 mx-auto max-w-190 px-6 space-y-10 font-jp text-base leading-loose text-foreground/85">
         <p>Kakushi編集室（以下、当方）は、本ウェブサイトを通じて取得する利用者の個人情報を、以下の方針に基づき適切に取り扱います。最終更新日：2026年4月1日。</p>
 
         <section>

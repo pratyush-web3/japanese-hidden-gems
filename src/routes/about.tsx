@@ -22,8 +22,9 @@ function AboutPage() {
         title="About Us"
         jp="私たちについて"
         image={images.hiddenTemple}
+        tone="moss"
       />
-      <section className="py-24 mx-auto max-w-[820px] px-6">
+      <section className="py-24 mx-auto max-w-205 px-6">
         <div className="space-y-8 font-jp text-lg leading-loose text-foreground/85">
           <p className="first-letter:font-display first-letter:text-6xl first-letter:float-left first-letter:mr-3 first-letter:leading-none first-letter:text-forest">
             Kakushi（隠し）は、京都の小さな編集室から生まれた旅誌です。観光案内に載らない、しかし確かにそこにある日本の場所を、季節とともに記録していくことを目的としています。
@@ -56,7 +57,7 @@ function AboutPage() {
       </section>
 
       <section className="py-24 bg-forest-deep text-stone">
-        <div className="mx-auto max-w-[900px] px-6 text-center">
+        <div className="mx-auto max-w-225 px-6 text-center">
           <div className="text-stone/60 text-[10px] tracking-[0.4em] uppercase mb-6">— 編集理念 —</div>
           <p className="font-jp text-2xl md:text-3xl leading-loose italic">
             「観光ではなく、出会いを。<br />消費ではなく、敬意を。<br />速さではなく、時間を。」

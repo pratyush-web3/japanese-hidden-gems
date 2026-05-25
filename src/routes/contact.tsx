@@ -23,9 +23,10 @@ function ContactPage() {
         jp="お問い合わせ"
         intro="旅の相談、寄稿のご提案、ひとことの感想。返事には少し時間をいただきますが、必ずお応えします。"
         image={images.coastalVillage}
+        tone="amber"
       />
 
-      <section className="py-24 mx-auto max-w-[1100px] px-6 grid md:grid-cols-2 gap-16">
+      <section className="py-24 mx-auto max-w-275 px-6 grid md:grid-cols-2 gap-16">
         <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
           <div>
             <label className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2 block">お名前</label>

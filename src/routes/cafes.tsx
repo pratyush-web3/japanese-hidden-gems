@@ -23,14 +23,26 @@ function CafesPage() {
         jp="里の喫茶"
         intro="街の喫茶店ではなく、山と海の片隅にある一杯。築百年の古民家、漁港の二階、雪国の茶寮。場所が違えば、珈琲も茶も、その意味を変える。"
         image={images.ruralCafe}
+        tone="amber"
       />
 
-      <section className="py-24 mx-auto max-w-[1400px] px-6 md:px-10">
+      <section className="py-24 mx-auto max-w-350 px-6 md:px-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {cafes.map((c, i) => (
             <article key={c.name} className="group">
-              <div className="relative overflow-hidden aspect-[4/5] mb-5">
-                <img src={c.image} alt={c.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+              <div className="relative overflow-hidden aspect-4/5 mb-5 panel-frame image-halo rounded-3xl">
+                <img
+                  src={c.image}
+                  alt={c.name}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  style={{ objectPosition: ["50% 42%", "50% 34%", "50% 50%", "50% 26%", "50% 64%", "50% 74%"][i % 6] }}
+                />
+                <div className={`absolute inset-0 bg-linear-to-t ${[
+                  "from-ink/30 via-transparent to-transparent",
+                  "from-earth/30 via-transparent to-transparent",
+                  "from-river/28 via-transparent to-transparent",
+                ][i % 3]}`} />
                 <div className="absolute top-4 left-4 text-stone text-[10px] tracking-[0.3em] uppercase bg-forest-deep/60 px-2 py-1">
                   {String(i + 1).padStart(2, "0")}
                 </div>
@@ -46,7 +58,7 @@ function CafesPage() {
       </section>
 
       <section className="py-24 bg-secondary/40">
-        <div className="mx-auto max-w-[900px] px-6">
+        <div className="mx-auto max-w-225 px-6">
           <div className="label-eyebrow mb-4">— 喫茶の作法 —</div>
           <h2 className="font-jp text-3xl md:text-4xl text-forest-deep mb-8">古民家カフェで過ごす時間</h2>
           <p className="font-jp text-base md:text-lg leading-loose text-foreground/80">

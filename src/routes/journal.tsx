@@ -23,14 +23,15 @@ function JournalPage() {
         jp="紀行"
         intro="編集部が訪ねた村、宿、寺、列車。長い文章と、ひとつの写真。観光記事ではない、旅の手記をお届けします。"
         image={images.localTrain}
+        tone="indigo"
       />
 
-      <section className="py-24 mx-auto max-w-[1100px] px-6">
+      <section className="py-24 mx-auto max-w-275 px-6">
         <div className="space-y-20">
           {stories.map((s, i) => (
             <article key={s.slug} className="grid md:grid-cols-12 gap-10 group cursor-pointer">
               <div className="md:col-span-5">
-                <div className="relative overflow-hidden aspect-[4/5]">
+                <div className="relative overflow-hidden aspect-4/5">
                   <img src={s.image} alt={s.title} loading="lazy" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
                 </div>
               </div>

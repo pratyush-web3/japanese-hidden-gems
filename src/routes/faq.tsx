@@ -35,8 +35,9 @@ function FAQPage() {
         title="FAQ"
         jp="よくある質問"
         image={images.ruralCafe}
+        tone="moss"
       />
-      <section className="py-24 mx-auto max-w-[900px] px-6">
+      <section className="py-24 mx-auto max-w-225 px-6">
         <div className="space-y-2">
           {faqs.map((f, i) => (
             <div key={i} className="border-b border-border">

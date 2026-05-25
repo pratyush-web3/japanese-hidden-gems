@@ -17,8 +17,8 @@ export const Route = createFileRoute("/terms")({
 function TermsPage() {
   return (
     <SiteLayout>
-      <PageHero eyebrow="Legal" title="Terms of Use" jp="利用規約" image={images.seasonSpring} />
-      <article className="py-24 mx-auto max-w-[760px] px-6 space-y-10 font-jp text-base leading-loose text-foreground/85">
+      <PageHero eyebrow="Legal" title="Terms of Use" jp="利用規約" image={images.seasonSpring} tone="stone" />
+      <article className="py-24 mx-auto max-w-190 px-6 space-y-10 font-jp text-base leading-loose text-foreground/85">
         <p>本利用規約（以下、本規約）は、Kakushi編集室（以下、当方）が本ウェブサイト上で提供するすべての情報、サービスの利用条件を定めるものです。利用者は本サイトを利用することにより、本規約に同意したものとみなします。</p>
 
         <section>

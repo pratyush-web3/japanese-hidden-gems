@@ -23,9 +23,10 @@ function TemplesPage() {
         jp="古寺巡礼"
         intro="清水寺でも金閣寺でもない、地図の隅に小さく書かれた寺。苔の参道、千年の杉、誰もいない本堂の前で聞こえる、自分の呼吸の音。"
         image={images.hiddenTemple}
+        tone="moss"
       />
 
-      <section className="py-24 mx-auto max-w-[1200px] px-6">
+      <section className="py-24 mx-auto max-w-300 px-6">
         <div className="grid md:grid-cols-2 gap-10">
           {temples.map((t, i) => (
             <article key={t.name} className="group border-t border-border pt-8">
@@ -46,7 +47,7 @@ function TemplesPage() {
       </section>
 
       <section className="py-24 bg-forest-deep text-stone">
-        <div className="mx-auto max-w-[900px] px-6">
+        <div className="mx-auto max-w-225 px-6">
           <div className="text-stone/60 text-[10px] tracking-[0.4em] uppercase mb-6">— 巡礼の心得 · A Note on Visiting —</div>
           <h2 className="font-jp text-3xl md:text-4xl mb-8 leading-snug">古寺を訪ねるときの、小さな約束</h2>
           <ul className="space-y-5 font-jp text-base md:text-lg leading-loose opacity-85">

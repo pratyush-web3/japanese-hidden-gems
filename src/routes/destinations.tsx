@@ -24,8 +24,9 @@ function DestinationsPage() {
         jp="隠れた地"
         intro="観光案内に載らない、しかし確かにそこにある場所。北の温泉郷から南の島まで、Kakushiが訪ね歩いた小さな旅の目録です。"
         image={images.heroVillage}
+        tone="amber"
       />
-      <section className="py-24 mx-auto max-w-[1400px] px-6 md:px-10">
+      <section className="py-24 mx-auto max-w-350 px-6 md:px-10">
         <div className="space-y-32">
           {destinations.map((d, i) => {
             const reverse = i % 2 === 1;
@@ -33,7 +34,7 @@ function DestinationsPage() {
               <article key={d.slug} className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
                 <div className={`md:col-span-7 ${reverse ? "md:order-2" : ""}`}>
                   <Link to="/destinations/$slug" params={{ slug: d.slug }} className="block group overflow-hidden">
-                    <img src={d.image} alt={d.name} loading="lazy" className="w-full aspect-[4/3] object-cover transition-transform duration-1000 group-hover:scale-105" />
+                    <img src={d.image} alt={d.name} loading="lazy" className="w-full aspect-4/3 object-cover transition-transform duration-1000 group-hover:scale-105" />
                   </Link>
                 </div>
                 <div className="md:col-span-5">

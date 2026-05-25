@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /* === Kakushi 隠し — Hidden Japan editorial design system ===
- * Forest green / mist gray / river blue / stone white / earthy brown.
+ * Cream / navy / sea glass / coral / brass.
  * Elegant serif + Japanese-friendly sans pair. Cinematic, calm, premium.
  */
 
@@ -55,44 +55,44 @@
 }
 
 :root {
-  /* Stone-white paper backdrop */
-  --background: oklch(0.97 0.008 90);
-  --foreground: oklch(0.22 0.015 150);
+  /* Warm paper backdrop */
+  --background: oklch(0.98 0.01 95);
+  --foreground: oklch(0.18 0.02 245);
 
-  --card: oklch(0.985 0.005 90);
-  --card-foreground: oklch(0.22 0.015 150);
-  --popover: oklch(0.985 0.005 90);
-  --popover-foreground: oklch(0.22 0.015 150);
+  --card: oklch(0.995 0.004 92);
+  --card-foreground: oklch(0.18 0.02 245);
+  --popover: oklch(0.995 0.004 92);
+  --popover-foreground: oklch(0.18 0.02 245);
 
-  /* Forest green primary */
-  --primary: oklch(0.32 0.045 150);
-  --primary-foreground: oklch(0.97 0.008 90);
+  /* Ink primary */
+  --primary: oklch(0.36 0.04 255);
+  --primary-foreground: oklch(0.985 0.006 92);
 
-  --secondary: oklch(0.92 0.012 100);
-  --secondary-foreground: oklch(0.28 0.025 150);
+  --secondary: oklch(0.94 0.014 90);
+  --secondary-foreground: oklch(0.28 0.03 245);
 
-  --muted: oklch(0.93 0.008 100);
-  --muted-foreground: oklch(0.48 0.018 140);
+  --muted: oklch(0.95 0.01 92);
+  --muted-foreground: oklch(0.48 0.02 245);
 
-  --accent: oklch(0.88 0.025 95);
-  --accent-foreground: oklch(0.28 0.025 150);
+  --accent: oklch(0.88 0.04 75);
+  --accent-foreground: oklch(0.28 0.03 245);
 
-  --destructive: oklch(0.5 0.18 28);
-  --destructive-foreground: oklch(0.97 0.008 90);
+  --destructive: oklch(0.58 0.16 32);
+  --destructive-foreground: oklch(0.985 0.006 92);
 
-  --border: oklch(0.88 0.012 100);
-  --input: oklch(0.9 0.01 100);
-  --ring: oklch(0.4 0.04 150);
+  --border: oklch(0.88 0.012 95);
+  --input: oklch(0.91 0.01 95);
+  --ring: oklch(0.42 0.05 255);
 
   /* Named palette tokens */
-  --forest: oklch(0.42 0.055 150);
-  --forest-deep: oklch(0.26 0.04 155);
-  --mist: oklch(0.86 0.008 220);
-  --river: oklch(0.5 0.045 230);
-  --stone: oklch(0.96 0.005 90);
-  --earth: oklch(0.45 0.06 60);
-  --ink: oklch(0.18 0.012 150);
-  --vermilion: oklch(0.58 0.16 35);
+  --forest: oklch(0.42 0.05 205);
+  --forest-deep: oklch(0.2 0.04 255);
+  --mist: oklch(0.9 0.01 95);
+  --river: oklch(0.55 0.08 235);
+  --stone: oklch(0.99 0.004 92);
+  --earth: oklch(0.65 0.08 70);
+  --ink: oklch(0.16 0.02 255);
+  --vermilion: oklch(0.66 0.16 30);
 }
 
 .dark {
@@ -122,6 +122,12 @@
   html { scroll-behavior: smooth; }
   body {
     background-color: var(--color-background);
+    background-image:
+      radial-gradient(circle at top left, color-mix(in oklab, var(--river) 22%, transparent), transparent 32%),
+      radial-gradient(circle at 85% 15%, color-mix(in oklab, var(--earth) 16%, transparent), transparent 26%),
+      radial-gradient(circle at 50% 80%, color-mix(in oklab, var(--vermilion) 10%, transparent), transparent 36%),
+      linear-gradient(180deg, color-mix(in oklab, var(--stone) 78%, transparent), transparent 28%, color-mix(in oklab, var(--mist) 68%, transparent));
+    background-attachment: fixed;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     font-feature-settings: "palt";
@@ -151,7 +157,27 @@
     font-size: 0.7rem;
     letter-spacing: 0.32em;
     text-transform: uppercase;
-    color: var(--forest);
+    color: var(--vermilion);
+  }
+
+  .panel-frame {
+    border: 1px solid color-mix(in oklab, var(--forest) 18%, transparent);
+    box-shadow: 0 18px 40px color-mix(in oklab, var(--ink) 16%, transparent);
+    background: color-mix(in oklab, var(--stone) 82%, transparent);
+  }
+
+  .image-halo {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .image-halo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, transparent 0%, color-mix(in oklab, var(--ink) 24%, transparent) 100%);
+    opacity: 0.85;
   }
 
   .grain::before {
@@ -159,7 +185,7 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    opacity: 0.06;
+    opacity: 0.045;
     mix-blend-mode: multiply;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
@@ -180,7 +206,7 @@
 
   .ink-rule {
     height: 1px;
-    background: linear-gradient(to right, transparent, var(--forest) 20%, var(--forest) 80%, transparent);
+    background: linear-gradient(to right, transparent, var(--vermilion) 20%, var(--forest) 80%, transparent);
     opacity: 0.4;
   }
 }

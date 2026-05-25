@@ -1,12 +1,15 @@
-import heroVillage from "@/assets/hero-village.jpg";
-import hiddenTemple from "@/assets/hidden-temple.jpg";
-import ruralCafe from "@/assets/rural-cafe.jpg";
-import localTrain from "@/assets/local-train.jpg";
-import coastalVillage from "@/assets/coastal-village.jpg";
-import seasonSpring from "@/assets/season-spring.jpg";
-import seasonSummer from "@/assets/season-summer.jpg";
-import seasonAutumn from "@/assets/season-autumn.jpg";
-import seasonWinter from "@/assets/season-winter.jpg";
+const unsplash = (id: string, query: string) =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1600&q=80&ixlib=rb-4.0.3&${query}`;
+
+const heroVillage = unsplash("1500375592092-40eb2168fd21", "crop=entropy");
+const hiddenTemple = unsplash("1542051841857-5f90071e7989", "crop=entropy");
+const ruralCafe = unsplash("1495474472287-4d71bcdd2085", "crop=entropy");
+const localTrain = unsplash("1511882150382-421056c89033", "crop=entropy");
+const coastalVillage = unsplash("1500375592092-40eb2168fd21", "crop=entropy&sat=-20");
+const seasonSpring = unsplash("1522383225653-ed111181a951", "crop=entropy");
+const seasonSummer = unsplash("1506744038136-46273834b3fb", "crop=entropy");
+const seasonAutumn = unsplash("1504196606672-aef5c9cefc92", "crop=entropy");
+const seasonWinter = unsplash("1485236715568-ddc5ee6ca227", "crop=entropy");
 
 export const images = {
   heroVillage,
@@ -362,12 +365,12 @@ export const stories: Story[] = [
 ];
 
 export const cafes = [
-  { name: "喫茶 きたむら", town: "美山", note: "築百八十年の古民家。自家焙煎の深煎り。", image: ruralCafe },
-  { name: "茶房 ゑびや", town: "妻籠", note: "栗きんとんと薄茶。縁側の席。", image: ruralCafe },
-  { name: "INE CAFE", town: "伊根", note: "舟屋二階。海面と同じ高さで珈琲。", image: ruralCafe },
-  { name: "café 来隣", town: "大原", note: "オーガニックビュッフェ。地元野菜。", image: ruralCafe },
-  { name: "森國酒造 富士見台", town: "小豆島", note: "蔵を改装。地酒と島野菜のプレート。", image: ruralCafe },
-  { name: "伊豆の華 茶寮", town: "銀山", note: "蕎麦と汁粉。雪見の抹茶。", image: ruralCafe },
+  { name: "喫茶 きたむら", town: "美山", note: "築百八十年の古民家。自家焙煎の深煎り。", image: unsplash("1458216873501-4b2c28a1c9b5", "crop=entropy") },
+  { name: "茶房 ゑびや", town: "妻籠", note: "栗きんとんと薄茶。縁側の席。", image: unsplash("1504674900247-0877df9cc836", "crop=entropy") },
+  { name: "INE CAFE", town: "伊根", note: "舟屋二階。海面と同じ高さで珈琲。", image: unsplash("1493976040374-85c8e12f0c0e", "crop=entropy") },
+  { name: "café 来隣", town: "大原", note: "オーガニックビュッフェ。地元野菜。", image: unsplash("1498804103079-a6351b050096", "crop=entropy") },
+  { name: "森國酒造 富士見台", town: "小豆島", note: "蔵を改装。地酒と島野菜のプレート。", image: unsplash("1453614512568-c4024d13c247", "crop=entropy") },
+  { name: "伊豆の華 茶寮", town: "銀山", note: "蕎麦と汁粉。雪見の抹茶。", image: unsplash("1517248135467-4c7edcad34c4", "crop=entropy") },
 ];
 
 export const temples = [

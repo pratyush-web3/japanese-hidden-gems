@@ -23,6 +23,7 @@ function SeasonalPage() {
         jp="四季の旅"
         intro="日本の旅は、季節に従う。春の桜、夏の青田、秋の紅葉、冬の雪。それぞれの時に、それぞれの場所が、もっとも美しく現れる。"
         image={images.seasonAutumn}
+        tone="indigo"
       />
 
       <div className="space-y-0">
@@ -52,7 +53,7 @@ function SeasonalPage() {
         ))}
       </div>
 
-      <section className="py-32 mx-auto max-w-[900px] px-6 text-center">
+      <section className="py-32 mx-auto max-w-225 px-6 text-center">
         <div className="label-eyebrow mb-6">— 季語 · Words of the Season —</div>
         <p className="font-jp text-2xl md:text-3xl leading-loose text-forest-deep italic">
           「春は曙。夏は夜。秋は夕暮。冬はつとめて。」
