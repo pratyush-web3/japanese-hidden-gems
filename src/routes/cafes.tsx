@@ -6,7 +6,11 @@ export const Route = createFileRoute("/cafes")({
   head: () => ({
     meta: [
       { title: "里の喫茶 · Rural Café Guide — Kakushi" },
-      { name: "description", content: "A guide to the hidden rural cafés of Japan — kominka coffee, mountain tea houses, and slow afternoons." },
+      {
+        name: "description",
+        content:
+          "A guide to the hidden rural cafés of Japan — kominka coffee, mountain tea houses, and slow afternoons.",
+      },
       { property: "og:url", content: "/cafes" },
     ],
     links: [{ rel: "canonical", href: "/cafes" }],
@@ -36,20 +40,35 @@ function CafesPage() {
                   alt={c.name}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                  style={{ objectPosition: ["50% 42%", "50% 34%", "50% 50%", "50% 26%", "50% 64%", "50% 74%"][i % 6] }}
+                  style={{
+                    objectPosition: [
+                      "50% 42%",
+                      "50% 34%",
+                      "50% 50%",
+                      "50% 26%",
+                      "50% 64%",
+                      "50% 74%",
+                    ][i % 6],
+                  }}
                 />
-                <div className={`absolute inset-0 bg-linear-to-t ${[
-                  "from-ink/30 via-transparent to-transparent",
-                  "from-earth/30 via-transparent to-transparent",
-                  "from-river/28 via-transparent to-transparent",
-                ][i % 3]}`} />
+                <div
+                  className={`absolute inset-0 bg-linear-to-t ${
+                    [
+                      "from-ink/30 via-transparent to-transparent",
+                      "from-earth/30 via-transparent to-transparent",
+                      "from-river/28 via-transparent to-transparent",
+                    ][i % 3]
+                  }`}
+                />
                 <div className="absolute top-4 left-4 text-stone text-[10px] tracking-[0.3em] uppercase bg-forest-deep/60 px-2 py-1">
                   {String(i + 1).padStart(2, "0")}
                 </div>
               </div>
               <div className="flex items-baseline gap-3 mb-3">
                 <h2 className="font-jp text-2xl text-forest-deep">{c.name}</h2>
-                <span className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">{c.town}</span>
+                <span className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+                  {c.town}
+                </span>
               </div>
               <p className="font-jp text-sm leading-relaxed text-foreground/75">{c.note}</p>
             </article>
@@ -60,7 +79,9 @@ function CafesPage() {
       <section className="py-24 bg-secondary/40">
         <div className="mx-auto max-w-225 px-6">
           <div className="label-eyebrow mb-4">— 喫茶の作法 —</div>
-          <h2 className="font-jp text-3xl md:text-4xl text-forest-deep mb-8">古民家カフェで過ごす時間</h2>
+          <h2 className="font-jp text-3xl md:text-4xl text-forest-deep mb-8">
+            古民家カフェで過ごす時間
+          </h2>
           <p className="font-jp text-base md:text-lg leading-loose text-foreground/80">
             田舎の喫茶店は、街のそれとは流れる時間が違う。注文してから珈琲が出てくるまで、二十分かかることもある。それは遅いのではなく、その店の速度がそうであるというだけのこと。店主と話したり、窓の外を眺めたり、何もしないでいたりするための時間が、ここには含まれている。
           </p>

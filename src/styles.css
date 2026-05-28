@@ -15,7 +15,8 @@
 }
 
 @theme inline {
-  --font-serif: "Cormorant Garamond", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", Georgia, serif;
+  --font-serif:
+    "Cormorant Garamond", "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", Georgia, serif;
   --font-sans: "Inter", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", system-ui, sans-serif;
   --font-display: "Cormorant Garamond", "Noto Serif JP", "Hiragino Mincho ProN", serif;
 
@@ -118,15 +119,36 @@
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
-  html { scroll-behavior: smooth; }
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--color-background);
     background-image:
-      radial-gradient(circle at top left, color-mix(in oklab, var(--river) 22%, transparent), transparent 32%),
-      radial-gradient(circle at 85% 15%, color-mix(in oklab, var(--earth) 16%, transparent), transparent 26%),
-      radial-gradient(circle at 50% 80%, color-mix(in oklab, var(--vermilion) 10%, transparent), transparent 36%),
-      linear-gradient(180deg, color-mix(in oklab, var(--stone) 78%, transparent), transparent 28%, color-mix(in oklab, var(--mist) 68%, transparent));
+      radial-gradient(
+        circle at top left,
+        color-mix(in oklab, var(--river) 22%, transparent),
+        transparent 32%
+      ),
+      radial-gradient(
+        circle at 85% 15%,
+        color-mix(in oklab, var(--earth) 16%, transparent),
+        transparent 26%
+      ),
+      radial-gradient(
+        circle at 50% 80%,
+        color-mix(in oklab, var(--vermilion) 10%, transparent),
+        transparent 36%
+      ),
+      linear-gradient(
+        180deg,
+        color-mix(in oklab, var(--stone) 78%, transparent),
+        transparent 28%,
+        color-mix(in oklab, var(--mist) 68%, transparent)
+      );
     background-attachment: fixed;
     color: var(--color-foreground);
     font-family: var(--font-sans);
@@ -134,18 +156,30 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: var(--font-display);
     font-weight: 400;
     letter-spacing: -0.01em;
   }
-  ::selection { background: var(--forest); color: var(--stone); }
+  ::selection {
+    background: var(--forest);
+    color: var(--stone);
+  }
 }
 
 @layer utilities {
-  .font-serif { font-family: var(--font-serif); }
-  .font-display { font-family: var(--font-display); }
-  .font-jp { font-family: "Shippori Mincho", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif; }
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-jp {
+    font-family: "Shippori Mincho", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  }
 
   .vertical-jp {
     writing-mode: vertical-rl;
@@ -176,7 +210,11 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(180deg, transparent 0%, color-mix(in oklab, var(--ink) 24%, transparent) 100%);
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      color-mix(in oklab, var(--ink) 24%, transparent) 100%
+    );
     opacity: 0.85;
   }
 
@@ -206,7 +244,13 @@
 
   .ink-rule {
     height: 1px;
-    background: linear-gradient(to right, transparent, var(--vermilion) 20%, var(--forest) 80%, transparent);
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--vermilion) 20%,
+      var(--forest) 80%,
+      transparent
+    );
     opacity: 0.4;
   }
 }

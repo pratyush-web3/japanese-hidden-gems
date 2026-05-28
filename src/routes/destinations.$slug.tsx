@@ -22,7 +22,9 @@ export const Route = createFileRoute("/destinations/$slug")({
   notFoundComponent: () => (
     <SiteLayout>
       <div className="min-h-[60vh] flex items-center justify-center">
-        <Link to="/destinations" className="text-forest underline">← Back</Link>
+        <Link to="/destinations" className="text-forest underline">
+          ← Back
+        </Link>
       </div>
     </SiteLayout>
   ),
@@ -42,7 +44,9 @@ function DestinationPage() {
           </div>
           <h1 className="font-jp text-stone text-7xl md:text-[9rem] leading-none mb-4">{d.name}</h1>
           <div className="font-display italic text-stone/80 text-3xl mb-6">{d.nameEn}</div>
-          <p className="font-jp text-stone/90 text-xl md:text-2xl max-w-2xl leading-relaxed">{d.tagline}</p>
+          <p className="font-jp text-stone/90 text-xl md:text-2xl max-w-2xl leading-relaxed">
+            {d.tagline}
+          </p>
         </div>
       </section>
 
@@ -56,7 +60,9 @@ function DestinationPage() {
             { label: "Prefecture", value: d.prefecture },
           ].map((f) => (
             <div key={f.label} className="p-8">
-              <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">{f.label}</div>
+              <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-2">
+                {f.label}
+              </div>
               <div className="font-jp text-lg text-forest-deep">{f.value}</div>
             </div>
           ))}
@@ -71,7 +77,10 @@ function DestinationPage() {
         </h2>
         <div className="space-y-8">
           {d.story.map((p, i) => (
-            <p key={i} className="font-jp text-lg md:text-xl leading-loose text-foreground/85 first-letter:font-display first-letter:text-5xl first-letter:float-left first-letter:mr-3 first-letter:leading-none first-letter:text-forest">
+            <p
+              key={i}
+              className="font-jp text-lg md:text-xl leading-loose text-foreground/85 first-letter:font-display first-letter:text-5xl first-letter:float-left first-letter:mr-3 first-letter:leading-none first-letter:text-forest"
+            >
               {p}
             </p>
           ))}
@@ -102,7 +111,9 @@ function DestinationPage() {
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-5">
             {d.highlights.map((h, i) => (
               <div key={i} className="flex items-baseline gap-5 border-b border-border pb-4">
-                <span className="font-display text-forest text-xl">{String(i + 1).padStart(2, "0")}</span>
+                <span className="font-display text-forest text-xl">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
                 <span className="font-jp text-lg text-foreground/85">{h}</span>
               </div>
             ))}
@@ -142,11 +153,16 @@ function DestinationPage() {
       <section className="py-24 bg-forest-deep text-stone relative overflow-hidden">
         <div className="grain" />
         <div className="mx-auto max-w-[1000px] px-6">
-          <div className="text-stone/60 text-[10px] tracking-[0.4em] uppercase mb-4">— 旅程 · Suggested Itinerary —</div>
+          <div className="text-stone/60 text-[10px] tracking-[0.4em] uppercase mb-4">
+            — 旅程 · Suggested Itinerary —
+          </div>
           <h3 className="font-jp text-4xl md:text-5xl mb-14">提案する旅程</h3>
           <div className="space-y-12">
             {d.itinerary.map((it) => (
-              <div key={it.day} className="grid md:grid-cols-12 gap-6 border-b border-stone/15 pb-12">
+              <div
+                key={it.day}
+                className="grid md:grid-cols-12 gap-6 border-b border-stone/15 pb-12"
+              >
                 <div className="md:col-span-2">
                   <div className="font-display text-3xl text-stone/90">{it.day}</div>
                 </div>
@@ -161,7 +177,10 @@ function DestinationPage() {
       </section>
 
       <section className="py-24 mx-auto max-w-[1200px] px-6 text-center">
-        <Link to="/destinations" className="text-sm tracking-[0.25em] uppercase text-forest border-b border-forest/40 pb-1">
+        <Link
+          to="/destinations"
+          className="text-sm tracking-[0.25em] uppercase text-forest border-b border-forest/40 pb-1"
+        >
           ← すべての隠れた地へ
         </Link>
       </section>

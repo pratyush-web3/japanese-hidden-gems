@@ -6,7 +6,11 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "私たちについて · About — Kakushi" },
-      { name: "description", content: "Kakushi is a quiet editorial journal from Kyoto, dedicated to the hidden corners of rural Japan." },
+      {
+        name: "description",
+        content:
+          "Kakushi is a quiet editorial journal from Kyoto, dedicated to the hidden corners of rural Japan.",
+      },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -50,7 +54,9 @@ function AboutPage() {
           ].map((s) => (
             <div key={s.label}>
               <div className="font-display text-6xl text-forest mb-2">{s.num}</div>
-              <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">{s.label}</div>
+              <div className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+                {s.label}
+              </div>
             </div>
           ))}
         </div>
@@ -58,9 +64,15 @@ function AboutPage() {
 
       <section className="py-24 bg-forest-deep text-stone">
         <div className="mx-auto max-w-225 px-6 text-center">
-          <div className="text-stone/60 text-[10px] tracking-[0.4em] uppercase mb-6">— 編集理念 —</div>
+          <div className="text-stone/60 text-[10px] tracking-[0.4em] uppercase mb-6">
+            — 編集理念 —
+          </div>
           <p className="font-jp text-2xl md:text-3xl leading-loose italic">
-            「観光ではなく、出会いを。<br />消費ではなく、敬意を。<br />速さではなく、時間を。」
+            「観光ではなく、出会いを。
+            <br />
+            消費ではなく、敬意を。
+            <br />
+            速さではなく、時間を。」
           </p>
         </div>
       </section>

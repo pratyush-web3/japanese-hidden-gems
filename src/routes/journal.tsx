@@ -6,7 +6,10 @@ export const Route = createFileRoute("/journal")({
   head: () => ({
     meta: [
       { title: "紀行 · Journal — Kakushi" },
-      { name: "description", content: "Travel essays and quiet field notes from across Japan's hidden countryside." },
+      {
+        name: "description",
+        content: "Travel essays and quiet field notes from across Japan's hidden countryside.",
+      },
       { property: "og:url", content: "/journal" },
     ],
     links: [{ rel: "canonical", href: "/journal" }],
@@ -32,14 +35,22 @@ function JournalPage() {
             <article key={s.slug} className="grid md:grid-cols-12 gap-10 group cursor-pointer">
               <div className="md:col-span-5">
                 <div className="relative overflow-hidden aspect-4/5">
-                  <img src={s.image} alt={s.title} loading="lazy" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+                  <img
+                    src={s.image}
+                    alt={s.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
                 </div>
               </div>
               <div className="md:col-span-7 flex flex-col justify-center">
                 <div className="flex items-center gap-3 text-[10px] tracking-[0.3em] uppercase text-muted-foreground mb-5">
-                  <span>No. {String(i + 1).padStart(2, "0")}</span><span>·</span>
-                  <span>{s.category}</span><span>·</span>
-                  <span>{s.date}</span><span>·</span>
+                  <span>No. {String(i + 1).padStart(2, "0")}</span>
+                  <span>·</span>
+                  <span>{s.category}</span>
+                  <span>·</span>
+                  <span>{s.date}</span>
+                  <span>·</span>
                   <span>{s.readTime}</span>
                 </div>
                 <h2 className="font-jp text-4xl md:text-5xl text-forest-deep mb-6 leading-tight group-hover:text-forest transition-colors">
@@ -51,7 +62,10 @@ function JournalPage() {
                     <p key={j}>{p}</p>
                   ))}
                 </div>
-                <Link to="/journal" className="mt-8 inline-flex self-start text-sm tracking-[0.25em] uppercase text-forest border-b border-forest/40 pb-1">
+                <Link
+                  to="/journal"
+                  className="mt-8 inline-flex self-start text-sm tracking-[0.25em] uppercase text-forest border-b border-forest/40 pb-1"
+                >
                   続きを読む →
                 </Link>
               </div>

@@ -73,7 +73,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Kakushi · 隠し — A Journal of Hidden Japan" },
-      { name: "description", content: "知られざる日本 — 静かな村、山の喫茶、隠れた古寺。A quiet editorial guide to the hidden villages, rural cafés, and forgotten temples of Japan." },
+      {
+        name: "description",
+        content:
+          "知られざる日本 — 静かな村、山の喫茶、隠れた古寺。A quiet editorial guide to the hidden villages, rural cafés, and forgotten temples of Japan.",
+      },
       { name: "author", content: "Kakushi 隠し" },
       { property: "og:title", content: "Kakushi · 隠し — A Journal of Hidden Japan" },
       { property: "og:description", content: "知られざる日本 — 静かな村、山の喫茶、隠れた古寺。" },

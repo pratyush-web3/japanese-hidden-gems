@@ -13,6 +13,7 @@ A small Vite + React starter site (TanStack Start) showcasing destinations, guid
 ## Quick start
 
 Prerequisites
+
 - Node.js 18+ (or newer)
 - Git
 - Optional: Bun (used by the included Vercel config)
@@ -53,7 +54,6 @@ Linters & formatting
 npm run lint
 npm run format
 ```
-
 
 ## Project structure (key files)
 

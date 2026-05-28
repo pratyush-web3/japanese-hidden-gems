@@ -73,7 +73,10 @@ export const destinations: Destination[] = [
       "毎年5月・12月の一斉放水点検",
     ],
     cafes: [
-      { name: "喫茶 きたむら", note: "築百八十年の古民家。自家焙煎の深煎り珈琲と、村の卵で焼くカステラ。" },
+      {
+        name: "喫茶 きたむら",
+        note: "築百八十年の古民家。自家焙煎の深煎り珈琲と、村の卵で焼くカステラ。",
+      },
       { name: "山小屋カフェ 苔陰", note: "由良川沿い、北山杉の床に座って飲む宇治抹茶。" },
     ],
     temples: [
@@ -81,9 +84,21 @@ export const destinations: Destination[] = [
       { name: "西教寺", note: "雪に閉ざされる二月、ろうそく灯の法要が静かに営まれる。" },
     ],
     itinerary: [
-      { day: "Day 1", title: "京都から、ゆっくりと北へ", detail: "午後の遅い列車で園部へ。バスで美山入り。古民家の宿に荷を解き、囲炉裏端で夕餉。" },
-      { day: "Day 2", title: "里と森を歩く", detail: "朝霧の集落を散策。午後は知井八幡神社を訪ね、由良川源流まで足を延ばす。" },
-      { day: "Day 3", title: "別れの茶", detail: "喫茶きたむらで珈琲を一杯。バスで園部へ戻り、京都へ。" },
+      {
+        day: "Day 1",
+        title: "京都から、ゆっくりと北へ",
+        detail: "午後の遅い列車で園部へ。バスで美山入り。古民家の宿に荷を解き、囲炉裏端で夕餉。",
+      },
+      {
+        day: "Day 2",
+        title: "里と森を歩く",
+        detail: "朝霧の集落を散策。午後は知井八幡神社を訪ね、由良川源流まで足を延ばす。",
+      },
+      {
+        day: "Day 3",
+        title: "別れの茶",
+        detail: "喫茶きたむらで珈琲を一杯。バスで園部へ戻り、京都へ。",
+      },
     ],
   },
   {
@@ -105,8 +120,7 @@ export const destinations: Destination[] = [
     ],
     history:
       "1601年、徳川家康が中山道を整備したことで宿場として成立。明治後期に中央本線が南へ迂回したため衰退するが、1960年代の保存運動により再生。",
-    access:
-      "JR中央本線・南木曽駅よりバス約7分。名古屋から特急しなので木曽福島経由も風情がある。",
+    access: "JR中央本線・南木曽駅よりバス約7分。名古屋から特急しなので木曽福島経由も風情がある。",
     highlights: [
       "重要伝統的建造物群保存地区",
       "枡形の道（敵の侵入を防ぐ屈曲路）",
@@ -123,8 +137,16 @@ export const destinations: Destination[] = [
       { name: "和智埜神社", note: "宿場の鎮守。旅の安全を祈る人が今も絶えない。" },
     ],
     itinerary: [
-      { day: "Day 1", title: "夕暮れの妻籠入り", detail: "夕方到着し、本陣を見学。夜は提灯の灯りの中を散策。" },
-      { day: "Day 2", title: "馬籠峠を歩く", detail: "妻籠から馬籠まで旧街道八kmを歩く。茶屋で休みながら半日かけて。" },
+      {
+        day: "Day 1",
+        title: "夕暮れの妻籠入り",
+        detail: "夕方到着し、本陣を見学。夜は提灯の灯りの中を散策。",
+      },
+      {
+        day: "Day 2",
+        title: "馬籠峠を歩く",
+        detail: "妻籠から馬籠まで旧街道八kmを歩く。茶屋で休みながら半日かけて。",
+      },
       { day: "Day 3", title: "木曽の手仕事", detail: "漆器工房を訪ね、檜の箸を求める。" },
     ],
   },
@@ -165,9 +187,21 @@ export const destinations: Destination[] = [
       { name: "新井崎神社", note: "断崖の上の小さな社。徐福伝説が残る。" },
     ],
     itinerary: [
-      { day: "Day 1", title: "舟屋の宿に泊まる", detail: "舟屋を改装した宿に到着。夕食は地元の鯖と岩牡蠣。" },
-      { day: "Day 2", title: "湾と社を巡る", detail: "朝の遊覧船で湾内一周。午後は浦嶋神社、夕暮れに新井崎へ。" },
-      { day: "Day 3", title: "海女小屋の昼", detail: "海女小屋で炭火焼の朝獲り魚介を味わい、宮津経由で帰路へ。" },
+      {
+        day: "Day 1",
+        title: "舟屋の宿に泊まる",
+        detail: "舟屋を改装した宿に到着。夕食は地元の鯖と岩牡蠣。",
+      },
+      {
+        day: "Day 2",
+        title: "湾と社を巡る",
+        detail: "朝の遊覧船で湾内一周。午後は浦嶋神社、夕暮れに新井崎へ。",
+      },
+      {
+        day: "Day 3",
+        title: "海女小屋の昼",
+        detail: "海女小屋で炭火焼の朝獲り魚介を味わい、宮津経由で帰路へ。",
+      },
     ],
   },
   {
@@ -189,8 +223,7 @@ export const destinations: Destination[] = [
     ],
     history:
       "江戸初期の延沢銀山として栄え、銀採掘が衰退した後、温泉地として再生。大正末期から昭和初期にかけて現在の木造建築群が建てられた。",
-    access:
-      "JR山形駅から山形新幹線で大石田駅、バスで約40分。冬は積雪により所要時間に余裕を。",
+    access: "JR山形駅から山形新幹線で大石田駅、バスで約40分。冬は積雪により所要時間に余裕を。",
     highlights: [
       "ガス灯のともる温泉街",
       "白銀の滝",
@@ -207,9 +240,21 @@ export const destinations: Destination[] = [
       { name: "天台宗 延沢寺", note: "銀山の歴史を見守ってきた古刹。" },
     ],
     itinerary: [
-      { day: "Day 1", title: "雪の温泉街へ", detail: "大石田駅からバス。夕方の到着で、ガス灯のともる瞬間に立ち会う。" },
-      { day: "Day 2", title: "滝と銀坑跡", detail: "白銀の滝、銀坑洞を巡り、午後は宿の湯にじっくり浸かる。" },
-      { day: "Day 3", title: "別れの朝湯", detail: "早朝の貸切露天で雪見の湯。山形で芋煮を味わって帰路。" },
+      {
+        day: "Day 1",
+        title: "雪の温泉街へ",
+        detail: "大石田駅からバス。夕方の到着で、ガス灯のともる瞬間に立ち会う。",
+      },
+      {
+        day: "Day 2",
+        title: "滝と銀坑跡",
+        detail: "白銀の滝、銀坑洞を巡り、午後は宿の湯にじっくり浸かる。",
+      },
+      {
+        day: "Day 3",
+        title: "別れの朝湯",
+        detail: "早朝の貸切露天で雪見の湯。山形で芋煮を味わって帰路。",
+      },
     ],
   },
   {
@@ -231,8 +276,7 @@ export const destinations: Destination[] = [
     ],
     history:
       "9世紀初頭、最澄の門弟により天台声明の道場として開かれた。建礼門院徳子が平家滅亡後に隠棲した寂光院でも知られる。",
-    access:
-      "京都駅から京都バス17系統で約1時間。地下鉄国際会館駅からバスで30分の経路もある。",
+    access: "京都駅から京都バス17系統で約1時間。地下鉄国際会館駅からバスで30分の経路もある。",
     highlights: [
       "三千院（苔庭・往生極楽院）",
       "寂光院（建礼門院ゆかり）",
@@ -249,8 +293,16 @@ export const destinations: Destination[] = [
       { name: "寂光院", note: "建礼門院徳子が出家後に余生を送った尼寺。" },
     ],
     itinerary: [
-      { day: "Day 1", title: "三千院の苔", detail: "午前中に到着し、三千院をゆっくりと拝観。苔庭で時を過ごす。" },
-      { day: "Day 2", title: "寂光院と滝", detail: "朝、寂光院へ。午後は音無の滝まで散策、夕暮れに勝林院。" },
+      {
+        day: "Day 1",
+        title: "三千院の苔",
+        detail: "午前中に到着し、三千院をゆっくりと拝観。苔庭で時を過ごす。",
+      },
+      {
+        day: "Day 2",
+        title: "寂光院と滝",
+        detail: "朝、寂光院へ。午後は音無の滝まで散策、夕暮れに勝林院。",
+      },
     ],
   },
   {
@@ -272,8 +324,7 @@ export const destinations: Destination[] = [
     ],
     history:
       "古代から塩と海運の島として発展。江戸時代に醤油醸造が始まり、明治末期にオリーブが導入された。映画『二十四の瞳』のロケ地としても有名。",
-    access:
-      "JR高松駅から高松港、フェリーで土庄港まで約1時間。岡山県の新岡山港からの航路もある。",
+    access: "JR高松駅から高松港、フェリーで土庄港まで約1時間。岡山県の新岡山港からの航路もある。",
     highlights: [
       "中山千枚田",
       "醤の郷（醤油蔵通り）",
@@ -290,8 +341,16 @@ export const destinations: Destination[] = [
       { name: "西光寺", note: "土庄の港町に佇む古刹。" },
     ],
     itinerary: [
-      { day: "Day 1", title: "島へ渡る", detail: "高松からフェリー。土庄に投宿、夕方エンジェルロードへ。" },
-      { day: "Day 2", title: "千枚田と醤の郷", detail: "中山千枚田から醤油蔵通りへ。夕方は寒霞渓の展望台。" },
+      {
+        day: "Day 1",
+        title: "島へ渡る",
+        detail: "高松からフェリー。土庄に投宿、夕方エンジェルロードへ。",
+      },
+      {
+        day: "Day 2",
+        title: "千枚田と醤の郷",
+        detail: "中山千枚田から醤油蔵通りへ。夕方は寒霞渓の展望台。",
+      },
       { day: "Day 3", title: "巡礼の道", detail: "八十八ヶ所のうち、海沿いの数札所を歩く。" },
     ],
   },
@@ -365,16 +424,51 @@ export const stories: Story[] = [
 ];
 
 export const cafes = [
-  { name: "喫茶 きたむら", town: "美山", note: "築百八十年の古民家。自家焙煎の深煎り。", image: unsplash("1458216873501-4b2c28a1c9b5", "crop=entropy") },
-  { name: "茶房 ゑびや", town: "妻籠", note: "栗きんとんと薄茶。縁側の席。", image: unsplash("1504674900247-0877df9cc836", "crop=entropy") },
-  { name: "INE CAFE", town: "伊根", note: "舟屋二階。海面と同じ高さで珈琲。", image: unsplash("1493976040374-85c8e12f0c0e", "crop=entropy") },
-  { name: "café 来隣", town: "大原", note: "オーガニックビュッフェ。地元野菜。", image: unsplash("1498804103079-a6351b050096", "crop=entropy") },
-  { name: "森國酒造 富士見台", town: "小豆島", note: "蔵を改装。地酒と島野菜のプレート。", image: unsplash("1453614512568-c4024d13c247", "crop=entropy") },
-  { name: "伊豆の華 茶寮", town: "銀山", note: "蕎麦と汁粉。雪見の抹茶。", image: unsplash("1517248135467-4c7edcad34c4", "crop=entropy") },
+  {
+    name: "喫茶 きたむら",
+    town: "美山",
+    note: "築百八十年の古民家。自家焙煎の深煎り。",
+    image: unsplash("1458216873501-4b2c28a1c9b5", "crop=entropy"),
+  },
+  {
+    name: "茶房 ゑびや",
+    town: "妻籠",
+    note: "栗きんとんと薄茶。縁側の席。",
+    image: unsplash("1504674900247-0877df9cc836", "crop=entropy"),
+  },
+  {
+    name: "INE CAFE",
+    town: "伊根",
+    note: "舟屋二階。海面と同じ高さで珈琲。",
+    image: unsplash("1493976040374-85c8e12f0c0e", "crop=entropy"),
+  },
+  {
+    name: "café 来隣",
+    town: "大原",
+    note: "オーガニックビュッフェ。地元野菜。",
+    image: unsplash("1498804103079-a6351b050096", "crop=entropy"),
+  },
+  {
+    name: "森國酒造 富士見台",
+    town: "小豆島",
+    note: "蔵を改装。地酒と島野菜のプレート。",
+    image: unsplash("1453614512568-c4024d13c247", "crop=entropy"),
+  },
+  {
+    name: "伊豆の華 茶寮",
+    town: "銀山",
+    note: "蕎麦と汁粉。雪見の抹茶。",
+    image: unsplash("1517248135467-4c7edcad34c4", "crop=entropy"),
+  },
 ];
 
 export const temples = [
-  { name: "三千院", town: "大原", era: "9世紀", note: "天台五箇室門跡。往生極楽院の阿弥陀三尊は国宝。" },
+  {
+    name: "三千院",
+    town: "大原",
+    era: "9世紀",
+    note: "天台五箇室門跡。往生極楽院の阿弥陀三尊は国宝。",
+  },
   { name: "寂光院", town: "大原", era: "推古天皇期", note: "建礼門院徳子が余生を送った尼寺。" },
   { name: "知井八幡神社", town: "美山", era: "10世紀", note: "千年の鎮守の杜。十月の例祭が静か。" },
   { name: "浦嶋神社", town: "伊根", era: "825年", note: "日本最古の浦島伝説を伝える社。" },
@@ -383,8 +477,36 @@ export const temples = [
 ];
 
 export const seasons = [
-  { key: "spring", label: "春", subtitle: "Haru / 三月〜五月", image: seasonSpring, places: ["美山", "大原"], note: "桜と山桜、若葉。雪解け水が川を満たし、棚田に水が張られる。" },
-  { key: "summer", label: "夏", subtitle: "Natsu / 六月〜八月", image: seasonSummer, places: ["小豆島", "伊根"], note: "青田の緑、夕立、蛍。海辺の集落と山の渓谷が涼を呼ぶ。" },
-  { key: "autumn", label: "秋", subtitle: "Aki / 九月〜十一月", image: seasonAutumn, places: ["大原", "妻籠"], note: "紅葉、新米、栗。古寺と山道が最も美しく色づく季節。" },
-  { key: "winter", label: "冬", subtitle: "Fuyu / 十二月〜二月", image: seasonWinter, places: ["銀山", "美山"], note: "雪、湯気、囲炉裏の火。静寂が深まり、灯火がやさしく見える季節。" },
+  {
+    key: "spring",
+    label: "春",
+    subtitle: "Haru / 三月〜五月",
+    image: seasonSpring,
+    places: ["美山", "大原"],
+    note: "桜と山桜、若葉。雪解け水が川を満たし、棚田に水が張られる。",
+  },
+  {
+    key: "summer",
+    label: "夏",
+    subtitle: "Natsu / 六月〜八月",
+    image: seasonSummer,
+    places: ["小豆島", "伊根"],
+    note: "青田の緑、夕立、蛍。海辺の集落と山の渓谷が涼を呼ぶ。",
+  },
+  {
+    key: "autumn",
+    label: "秋",
+    subtitle: "Aki / 九月〜十一月",
+    image: seasonAutumn,
+    places: ["大原", "妻籠"],
+    note: "紅葉、新米、栗。古寺と山道が最も美しく色づく季節。",
+  },
+  {
+    key: "winter",
+    label: "冬",
+    subtitle: "Fuyu / 十二月〜二月",
+    image: seasonWinter,
+    places: ["銀山", "美山"],
+    note: "雪、湯気、囲炉裏の火。静寂が深まり、灯火がやさしく見える季節。",
+  },
 ];

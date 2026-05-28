@@ -6,7 +6,11 @@ export const Route = createFileRoute("/temples")({
   head: () => ({
     meta: [
       { title: "古寺巡礼 · Hidden Temples — Kakushi" },
-      { name: "description", content: "Forgotten temples and quiet shrines off Japan's tourist trail — moss gardens, mountain pilgrimage paths, and the silence of old wood." },
+      {
+        name: "description",
+        content:
+          "Forgotten temples and quiet shrines off Japan's tourist trail — moss gardens, mountain pilgrimage paths, and the silence of old wood.",
+      },
       { property: "og:url", content: "/temples" },
     ],
     links: [{ rel: "canonical", href: "/temples" }],
@@ -48,8 +52,12 @@ function TemplesPage() {
 
       <section className="py-24 bg-forest-deep text-stone">
         <div className="mx-auto max-w-225 px-6">
-          <div className="text-stone/60 text-[10px] tracking-[0.4em] uppercase mb-6">— 巡礼の心得 · A Note on Visiting —</div>
-          <h2 className="font-jp text-3xl md:text-4xl mb-8 leading-snug">古寺を訪ねるときの、小さな約束</h2>
+          <div className="text-stone/60 text-[10px] tracking-[0.4em] uppercase mb-6">
+            — 巡礼の心得 · A Note on Visiting —
+          </div>
+          <h2 className="font-jp text-3xl md:text-4xl mb-8 leading-snug">
+            古寺を訪ねるときの、小さな約束
+          </h2>
           <ul className="space-y-5 font-jp text-base md:text-lg leading-loose opacity-85">
             <li>— 山門で一礼してから境内に入る。出るときも同じく。</li>
             <li>— 本堂では大きな声を出さない。携帯の電源は切る。</li>
